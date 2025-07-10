@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: To-Do List</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid var(--secondary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Proyecto: To-Do List</h1>
+            <p>Una aplicación para gestionar tareas diarias.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <a href="index.html" class="back-link">&larr; Volver al Portafolio</a>
+            <div class="gallery">
+                <img src="img/to-do_list/login.png" alt="Login de la aplicación">
+                <img src="img/to-do_list/login-error.png" alt="Error en el login">
+                <img src="img/to-do_list/lista_tarea_vacia.png" alt="Lista de tareas vacía">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
